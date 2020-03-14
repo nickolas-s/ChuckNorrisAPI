@@ -1,4 +1,4 @@
-const baseEndpoint = 'http://api.icndb.com/jokes/random';
+const baseEndpoint = 'https://api.icndb.com/jokes/random';
 const jokesDisplay = document.querySelector('.jokesDisplay');
 const button = document.querySelector('.getJokes');
 const spinner = document.querySelector('.spinner');
