@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Chuck Norris Joke Generator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Chuck Norris Joke Generator</h2>
+      <form>
+        <div>
+          <p>
+            Number of jokes:
+            <label for="spinnerNum">
+              <input
+                name="spinnerNum"
+                type="number"
+                min="1"
+                max="10"
+                step="1"
+                value="1"
+                class="spinner"
+              />
+            </label>
+          </p>
+        </div>
+        <div>
+          <button class="getJokes">Get Jokes</button>
+        </div>
+      </form>
+
+      <!-- Loader -->
+      <div class="lds-spinner loader hidden">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="jokesDisplay"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
