@@ -30,8 +30,7 @@ function handleError(err) {
   loader.classList.add('hidden');
   jokesDisplay.classList.remove('hidden');
 
-  console.log('Oh NO!');
-  console.log(err);
+  console.log(`Something went wrong - ${err}`);
   jokesDisplay.textContent = `Something went wrong 💩💩 ${err}`;
 }
 
